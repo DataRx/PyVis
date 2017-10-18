@@ -46,6 +46,7 @@ def process():
     print("[INFO] computing object detections...")
     net.setInput(blob)
     detections = net.forward()
+    print 'foo'
 
     # loop over the detections
     for i in np.arange(0, detections.shape[2]):
